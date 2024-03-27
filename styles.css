@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    background-color: #8fc5cb;
+    overflow-y: auto; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+.header {
+    border: #3e3d3d solid 1vh;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 2vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+.box {
+    background-color: whitesmoke;
+    border: 1.1vh double #6e5c5c;
+    padding: 5vw;
+    border-radius: 10px;
+    position: absolute;
+    left: 19.5vw;
+    top: 20vh;
+    width: 50vw;
+
+}
+.footer {
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 2vh;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0vh;
+    width: 100%;
+    z-index: 999;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: solid 0.1vh black;
+    background-color: #7aa77d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #7e64b4;
+}
+
+.controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#app {
+    margin-top: 14vh;
+    margin-bottom: 10vh; 
+    overflow-y: auto; 
+    scroll-behavior: smooth;
+}
+
+.t_container {
+    text-align: center;
+}
+
+.timer {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background-color: rgb(31, 29, 29);
+    color: white;
+    border-radius: 0.5vh;
+    width: fit-content;
+    align-self: center;
+    margin-left: 21vw;
+    padding: 1vh;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: solid 0.1vh black;
+    background-color: #7aa77d;
+    color: white;
+}
+
+.controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.session-counter {
+    margin-top: 40vh;
+}
+
+.todo_box {
+    margin-top: 0vh;
+    position: absolute;
+    top: 73vh;
+    left: 29.5vw;
+    z-index: 998;
+    padding-bottom: 14vh;
+}
+
+.todo_box h2 {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 0.3vh;
+    border: solid black;
+    border-radius: 0.1vh;
+}
+
+.todo_box input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 40vw;
+}
+
+.todo_box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo_box li {
+    margin-bottom: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
